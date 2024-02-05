@@ -1,15 +1,8 @@
-<%= form_with(model: @produto) do |form| %>
+<%# chamado de passe , aqui eu renderizo um componente, que é produto.
+#por estar no mesmo pacote não preciso colocar mais além de 'produto' como o path do componente
+#oque é feito , alterado, criado em _produto.html.erb , é refletido aqui%>
+<%= render 'produto' %>
 
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-
-    <%= form.label :price %>
-    <%= form.number_field :price %>
-
-    <%= form.label :quantidade %>
-    <%= form.number_field :quantidade %>
-
-    <%= form.submit :cadastrar %>
-    <%= link_to "listar produtos", produtos_path %>
-
-<% end %>
+<div>
+<%= link_to "listar produtos", produtos_path %>
+</div>
