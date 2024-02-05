@@ -1,5 +1,5 @@
 class ProdutosController < ApplicationController
-
+    before_action :setProduto
     def index
         @produtos = Produto.all
     end
