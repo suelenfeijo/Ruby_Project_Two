@@ -13,6 +13,15 @@ class ProdutosController < ApplicationController
 
     def create
         @produto = Produto.new(produto_params)
+        #se o produto pôde ser salvo
+        if @produto.save
+            #redirecione para produto, e mostra o show
+            redirect_to produtos_url    
+        #se não
+        else
+            #me mostre dados de new e me dê um status de não processamento da entidade
+            render :new, status: :unprocessable_entity
+        end
     end
 
     private
