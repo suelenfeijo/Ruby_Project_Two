@@ -1,0 +1,7 @@
+consulta de rotas: http://127.0.0.1:3000/rails/info/routes
+
+
+GemFile = agregador de bibliotecas
+
+criando um model de integer e decimal
+rails g model produto name price:decimal quantidade:integer
