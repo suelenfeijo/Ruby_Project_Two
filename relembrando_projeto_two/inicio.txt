@@ -5,3 +5,9 @@ GemFile = agregador de bibliotecas
 
 criando um model de integer e decimal
 rails g model produto name price:decimal quantidade:integer
+
+
+entrando no console rails e criando um produto
+
+rails console
+Produto.create(name: "Motohome", quantidade: 1, price: "200.000")
