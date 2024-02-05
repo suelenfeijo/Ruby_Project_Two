@@ -20,3 +20,10 @@ para inserir um código ruby em htm é preciso
 e se eu quiser imprimir esse código:
 
 <%= código aqui dentro %>
+
+quando uso a variável de instância @produtos = no plural
+quero dizer que quero listar vários produtos, ou seja, me refiro a uma listar
+
+utilizando o singular : @produto da chamada "variável de instância", ou seja, quem me fornece
+a injeção de representação do objeto ou atributos, estou fazendo indicação de uso único, e não
+uma lista.
