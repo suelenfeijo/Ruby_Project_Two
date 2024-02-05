@@ -1,5 +1,5 @@
 class ProdutosController < ApplicationController
-    before_action :setProduto, only: [:show, :edit, :update]
+    before_action :setProduto, only: [:show, :edit, :update, :destroy]
     def index
         @produtos = Produto.all
     end
@@ -35,6 +35,14 @@ class ProdutosController < ApplicationController
             #me mostre dados de new e me dê um status de não processamento da entidade
             render :new, status: :unprocessable_entity
         end
+    end
+
+    def destroy
+      if  @produto.destroy
+        redirect_to produtos_url
+      else
+        redirect_to @produto
+      end
     end
 
     private
