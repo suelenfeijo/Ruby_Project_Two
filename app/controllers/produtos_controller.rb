@@ -25,6 +25,18 @@ class ProdutosController < ApplicationController
 
     def edit;end
 
+    def update
+        # se o produto pô ser atualizado através dos parâmetros (id) recebido na url
+        if @produto.update(produto_params)
+            #redirecione para o id do produto (configurado na view o direcionamento)
+            redirect_to produtos_url    
+        #se não
+        else
+            #me mostre dados de new e me dê um status de não processamento da entidade
+            render :new, status: :unprocessable_entity
+        end
+    end
+
     private
     def setProduto
         @produto = Produto.find(params[:id])
