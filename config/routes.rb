@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   #get 'produtos/:id', to: "produtos#show"
 
   #o helper resources trás todas as rotas para os métodos existentes em controller produtos
-  resources :produto
+  resources :produtos
 end

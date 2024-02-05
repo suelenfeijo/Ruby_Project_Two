@@ -5,6 +5,9 @@
     <p> <%= produto.price %> </p>
     <p> <%= produto.quantidade %> </p>
     <%# direcione para produtos_path e aqui em -> (produto) : é recebido o id do produto  %>
-    <%= link_to "ver produto", "produtos/#{produto.id}" %>
+    <%# link_to "ver produto", "produtos/#{produto.id}" %>
+
+    <%= link_to "ver produto", produto %>
+
 <%end%>
 
