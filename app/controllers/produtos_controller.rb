@@ -6,7 +6,8 @@ class ProdutosController < ApplicationController
 
     def show
     end
-
+    
+    private
     def setProduto
         @produto = Produto.find(params[:id])
     end
