@@ -11,8 +11,7 @@
 
     <%= link_to "ver produto", produto %>
     <%= link_to "editar produto", edit_produto_path(produto) %>
-    <%= link_to "deletar", produto, method: :delete, data: { confirm: "Você tem certeza que deseja apagar o registro? "} %>
-
+    <%= link_to 'Delete', "produtos/#{produto.id}", data: { "turbo-method": :delete, 'turbo-confirm': "Tem certeza?" } %>
 
 <%end%>
 
