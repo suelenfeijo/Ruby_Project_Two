@@ -1,5 +1,7 @@
 <h1>Página mvc estudo Ruby On Rails</h1>
 
+<%= link_to "criar produto", new_produto_path %>
+
 <% @produtos.each do |produto| %>
     <p> <%= produto.name %> </p>
     <p> <%= produto.price %> </p>
