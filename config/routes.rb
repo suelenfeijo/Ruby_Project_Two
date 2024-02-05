@@ -7,10 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get 'produtos', to: "produtos#index"
-  get 'produtos/new', to: "produtos#new" 
+  #get 'produtos', to: "produtos#index"
+  #get 'produtos/new', to: "produtos#new" 
 
-  post 'produtos', to: "produtos#create"
+  #post 'produtos', to: "produtos#create"
 
-  get 'produtos/:id', to: "produtos#show"
+  #get 'produtos/:id', to: "produtos#show"
+
+  #o helper resources trás todas as rotas para os métodos existentes em controller produtos
+  resources :produto
 end
