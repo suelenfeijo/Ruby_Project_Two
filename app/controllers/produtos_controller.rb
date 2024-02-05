@@ -1,5 +1,5 @@
 class ProdutosController < ApplicationController
-    before_action :setProduto, only: [:show, :edit]
+    before_action :setProduto, only: [:show, :edit, :update]
     def index
         @produtos = Produto.all
     end
@@ -28,8 +28,8 @@ class ProdutosController < ApplicationController
     def update
         # se o produto pô ser atualizado através dos parâmetros (id) recebido na url
         if @produto.update(produto_params)
-            #redirecione para o id do produto (configurado na view o direcionamento)
-            redirect_to produtos_url    
+            #redirecione para o id do produto , e renderize o produto que foi editado
+            redirect_to produtos_url(@produto) 
         #se não
         else
             #me mostre dados de new e me dê um status de não processamento da entidade
