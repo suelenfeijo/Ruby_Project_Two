@@ -27,3 +27,12 @@ quero dizer que quero listar vários produtos, ou seja, me refiro a uma listar
 utilizando o singular : @produto da chamada "variável de instância", ou seja, quem me fornece
 a injeção de representação do objeto ou atributos, estou fazendo indicação de uso único, e não
 uma lista.
+
+
+sobre as visualização de cada método no controller
+é preciso ter uma view nomeada com cada o nome de cadarota declarada 
+no caso : 
+
+Produto (o modelo)#show (a view a ser renderizada)
+entendeu? 
+o objeto produto será renderizada no componente de view html nomeado : show
