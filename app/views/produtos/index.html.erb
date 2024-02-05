@@ -1,1 +1,8 @@
 <h1>Página mvc estudo Ruby On Rails</h1>
+
+<% @produtos.each do |produto| %>
+    <p> <%= produto.name %> </p>
+    <p> <%= produto.price %> </p>
+    <p> <%= produto.quantidade %> </p>
+
+<%end%>

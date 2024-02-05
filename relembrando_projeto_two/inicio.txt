@@ -11,3 +11,12 @@ entrando no console rails e criando um produto
 
 rails console
 Produto.create(name: "Motohome", quantidade: 1, price: "200.000")
+
+
+para inserir um código ruby em htm é preciso
+
+<% código aqui dentro %>
+
+e se eu quiser imprimir esse código:
+
+<%= código aqui dentro %>
